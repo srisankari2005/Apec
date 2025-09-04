@@ -22,63 +22,55 @@
         }
 
         .login-container img {
-            width: 150px;
-            height: auto;
             margin-bottom: 20px;
-        }
-
-        h2 {
-            margin-bottom: 20px;
+            border-radius: 50%;
         }
 
         input[type="text"], input[type="password"] {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
-            border: 1px solid #ddd;
+            border: 1px solid #ccc;
             border-radius: 5px;
         }
 
         button {
-            background-color: #007bff;
-            color: white;
-            padding: 10px;
             width: 100%;
+            padding: 10px;
+            background: #007bff;
             border: none;
+            color: white;
+            font-size: 16px;
             border-radius: 5px;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background: #0056b3;
         }
 
-        p {
-            margin-top: 15px;
+        .create-account {
+            margin-top: 10px;
             font-size: 14px;
         }
 
-        p a {
+        .create-account a {
             color: #007bff;
             text-decoration: none;
-        }
-
-        p a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
 <div class="login-container">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWQA44sq9yQbatVF_aTo39lvi41xWEj5HFA&s" alt="College Logo" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWQA44sq9yQbatVF_aTo39lvi41xWEj5HFA&s" alt="College Logo" width="150" height="150">
     <h2>Login</h2>
-    <form>
-        <input type="text" placeholder="Username" required />
-        <input type="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-    </form>
-    <p>Don't have an account? <a href="#">Create one</a></p>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button>Login</button>
+    <div class="create-account">
+        Don't have an account? <a href="#">Create one</a>
+    </div>
 </div>
 
 </body>
