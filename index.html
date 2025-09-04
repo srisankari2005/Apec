@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Login Page</title>
     <style>
         body {
@@ -12,72 +10,76 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
+
         .login-container {
-            background: white;
-            padding: 30px 40px;
+            background: #fff;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-            width: 320px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 300px;
             text-align: center;
         }
+
         .login-container img {
-            width: 120px;
+            width: 150px;
+            height: auto;
             margin-bottom: 20px;
         }
-        .login-container h2 {
-            margin-bottom: 25px;
-            color: #333;
+
+        h2 {
+            margin-bottom: 20px;
         }
-        .login-container input[type="text"],
-        .login-container input[type="password"] {
+
+        input[type="text"], input[type="password"] {
             width: 100%;
-            padding: 12px 10px;
-            margin: 10px 0 20px 0;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-size: 16px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
         }
-        .login-container button {
-            background: #007bff;
-            border: none;
-            padding: 12px;
-            width: 100%;
-            border-radius: 6px;
+
+        button {
+            background-color: #007bff;
             color: white;
-            font-size: 16px;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
-        .login-container button:hover {
-            background: #0056b3;
+
+        button:hover {
+            background-color: #0056b3;
         }
-        .create-account {
+
+        p {
             margin-top: 15px;
             font-size: 14px;
         }
-        .create-account a {
+
+        p a {
             color: #007bff;
             text-decoration: none;
         }
-        .create-account a:hover {
+
+        p a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <div class="login-container">
-        <!-- Replace 'logo.png' with your actual logo image file name -->
-        <img src="logo.png" alt="College Logo" />
-        <h2>Login</h2>
-        <form action="#" method="POST">
-            <input type="text" name="username" placeholder="Username" required />
-            <input type="password" name="password" placeholder="Password" required />
-            <button type="submit">Login</button>
-        </form>
-        <div class="create-account">
-            <p>Don't have an account? <a href="#">Create one</a></p>
-        </div>
-    </div>
+
+<div class="login-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfWQA44sq9yQbatVF_aTo39lvi41xWEj5HFA&s" alt="College Logo" />
+    <h2>Login</h2>
+    <form>
+        <input type="text" placeholder="Username" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit">Login</button>
+    </form>
+    <p>Don't have an account? <a href="#">Create one</a></p>
+</div>
+
 </body>
 </html>
